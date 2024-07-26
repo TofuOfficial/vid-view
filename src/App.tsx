@@ -6,10 +6,11 @@ import 'vidstack/bundle';
 function App() {
   const [vidurl, setVidurl] = createSignal("https://www041.vipanicdn.net/streamhls/012ef98641ababee475564c70e8ebc93/ep.220.1709277897.m3u8");
 
-  const isValidVideoUrl = (url: string) => {
-    const videoFormats = /\.(mp4|webm|m3u8)$/i; 
-    return videoFormats.test(url);
-  };
+  // TODO: create a url validator
+  // const isValidVideoUrl = (url: string) => {
+  //   const videoFormats = /\.(mp4|webm|m3u8)$/i; 
+  //   return videoFormats.test(url);
+  // };
 
   const handleVideoUrlChange = (e: Event) => {
     e.preventDefault();
